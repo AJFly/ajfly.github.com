@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <title>Goals and Challenges</title>
+  <!-- CSS STYLESHEETS -->
+  <link rel="stylesheet" href="bootstrap.css">
+  <link rel="stylesheet" href="helloworld.css">
+  <!-- CSS END -->
+  <!-- JAVASCRIPT AND JQUERY -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+  <script src="js/bootstrap.js"></script>
+  <!-- JAVASCRIPT AND JQUERY END -->
+   <link href="https://fonts.googleapis.com/css?family=Lato:400,700i|Open+Sans:700i" rel="stylesheet">
+<!-- TO-THE-TOP SCRIPT BEGINS-->
+<script type="text/javascript">
+ 
+$(function() {
+ 
+$(window).scroll(function() {
+ 
+if($(this).scrollTop() != 0) {
+ 
+$('#toTop').fadeIn();
+ 
+} else {
+ 
+$('#toTop').fadeOut();
+ 
+}
+ 
+});
+ 
+$('#toTop').click(function() {
+ 
+$('body,html').animate({scrollTop:0},800);
+ 
+});
+ 
+});
+ 
+</script>
+<!-- TO-THE-TOP SCRIPT ENDS -->
+</head>
+<body>
+  <!-- BOOTSTRAP NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">VRChat</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="ChallengeStatement.html" target="_blank">Challenge Statement<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="SurveyField.html" target="_blank">Survey</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="GoalsChall.html">Goals/Challenges</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="WorksCited.html" target="_blank">Works Cited</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+      <!--<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">-->
+      <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+      </form>
+    </div>
+  </nav>
+  <!-- BOOTSTRAP NAVBAR END -->
+
+  <div class="container">
+    <p>
+      I have changed the backround color and text color of the navbar-menu.<br>
+      Now, the links are white color, and when I hover the mouse over it it changed on black.<br>
+      However, I found two bugs that I could not solve (maybe it is one related bug):
+    </p>
+      <ol>
+        <li>The "Challenge Statement" button does not changes on black when I hover the mouse on it.</li>
+        <li>When I minimize the window and the navbar is changes to mini-view, the menu does not open on this pages and "Works Cited". However, it works on "Challenge Statement" and "Survey" pages.</li>
+        <li>Also, when I open minimized menu on "Challenge Statement" page, it does not close when I click on the button again.</li>
+      </ol>
+      <p>Here is the screenshots or gif-animation of these bugs:
+        <br>
+        1) Color of "Challenge Statement" does not change on hover:
+        <img src="img/ChallState.gif" class="img-fluid">
+        <br>
+        2) Minimized window does not open:
+        <img src="img/GoalsMiniMenu.gif" class="img-fluid">
+        <br>
+        3) Problem of the minimized menu on "Challenge Statement" pages:
+        <img src="img/ChallMenu.gif" class="img-fluid">
+      </p>
+      I am not sure what the problem is. I have check all the code of the problem pages, and it looks the same and working. Also, I even replaced the bootstap-files (both CSS and JS), where I had to change the styles of navbar again. Nothing helped.
+    </p>
+    <div id="toTop"> <b>↑</b> To the Top</div>
+</body>
+</html>

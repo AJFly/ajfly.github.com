@@ -1,0 +1,58 @@
+.navbar-brand {
+  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+ 
+} 
+
+
+.column {
+  float: left;
+  width: 33.00%;
+  padding: 5px;
+}
+
+body {
+	height: 100%;
+	background-color: #026a53;
+	background-size: 100% 100%;
+	color: #e8f2f0;
+}
+
+hr {
+	border-color: #026a53;
+}
+
+table, th, td {
+/* border: 2px solid black; */
+  background-color: #026a53;
+}
+
+a {
+  color: #39a990;
+
+}
+
+a:hover {
+  color: black;
+}
+
+h3 {
+  font-family: "Lato";
+}
+
+#toTop {
+width:100px;
+height: 25px;
+border:10px;
+background:#f7f7f7;
+text-align:center;
+padding:5px;
+position:fixed;
+bottom:10px; /* отступ кнопки от нижнего края страницы*/
+right:10px;
+cursor:pointer;
+display:none;
+color:#026a53;
+font-family: "Open Sans";
+font-size:13px;
+}
